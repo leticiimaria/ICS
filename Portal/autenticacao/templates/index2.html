@@ -1,0 +1,20 @@
+{%extends 'base_generic.html'%}
+{% load static %}
+{%block content%}
+seja bem vindo!
+{% for usuario in listaUsuario %}
+
+<!-- NÃO TEM ROTA PARA ISSO NAO SEI SE PRESTA -->
+<p>
+    Nome:{{pessoa.id}} - {{pessoa.nome}}
+    <a href="/excluir/{{usuario.id}}">excluir</a>
+    <a href="/editar/{{usuario.id}}">editar</a>
+</p>
+{% endfor %}
+<a href="/cadastro/"> Cadastrar usuarios</a>
+<br>
+<a href="{% url 'logout' %}">
+    logout
+</a>
+
+{%endblock%}

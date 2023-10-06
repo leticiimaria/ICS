@@ -1,0 +1,98 @@
+{%extends 'base_generic.html'%}
+{% load static %}
+{%block content%}
+<div class="container-fluid">
+    <div class="row my-5">
+        <div class="col-10 mx-auto">
+
+            <div class="row mb-3 ">
+                <div class="col-12">
+                    <div class="dropdown d-flex justify-content-center">
+                        <button class="btn  btn-success fs-5 lh-1 dropdown-toggle" type="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Selecione o Campus
+                        </button>
+
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Campus Apodi</a></li>
+                            <li><a class="dropdown-item" href="#">Campus Caicó</a></li>
+                            <li><a class="dropdown-item" href="#">Campus Parelhas</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row mb-3">
+                <div class="col-md-6 col-12 mb-3 mb-md-0">
+                    <div class="card bg-light">
+                        <img src="{% static 'images/foto_if.png' %}" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">Campus</h5>
+                            <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                            <p>CEP 12345678</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-12">
+                    <div class="list-group">
+                        <a href="#" class="bg-success list-group-item list-group-item-action text-white"
+                            aria-current="true">
+                            Contatos
+                        </a>
+                        <a href="#" class="list-group-item list-group-item-action">Secretaria do Gabinete: 84 -
+                            4005-0753 /
+                            0754 / 0768</a>
+                        <a href="#" class="list-group-item list-group-item-action">Pró-reitoria de Administração: 84
+                            -
+                            4005-0788 / 0790</a>
+                        <a href="#" class="list-group-item list-group-item-action">Pró-reitoria de Ensino: 84 -
+                            4005-0780</a>
+                        <a href="#" class="list-group-item list-group-item-action">Pró-reitoria de Ensino: 84 -
+                            4005-0780</a>
+                        <a href="#" class="list-group-item list-group-item-action">Pró-reitoria de Ensino: 84 -
+                            4005-0780</a>
+                        <a href="#" class="list-group-item list-group-item-action">Pró-reitoria de Ensino: 84 -
+                            4005-0780</a>
+                        <a href="#" class="list-group-item list-group-item-action">Pró-reitoria de Ensino: 84 -
+                            4005-0780</a>
+                        <a href="#" class="list-group-item list-group-item-action">Pró-reitoria de Ensino: 84 -
+                            4005-0780</a>
+                        <a href="#" class="list-group-item list-group-item-action">Pró-reitoria de Ensino: 84 -
+                            4005-0780</a>
+                        <a href="#" class="list-group-item list-group-item-action">Pró-reitoria de Ensino: 84 -
+                            4005-0780</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-12 text-center">
+                    <h2>Fale conosco</h2>
+                </div>
+            </div>
+            <!--Linha do form-->
+            <div class="row">
+                <!--vai ser col 10 com as 2 colunas preenchidas por margens automaticas e col 12 abaixo de md-->
+                <div class="col-12">
+                    <!--aqui você coloca o form letlet-->
+                    <div>
+                        <form>
+                            <div class="mb-3">
+                                <label for="exampleInputEmail1" class="form-label">Email</label>
+                                <input type="email" class="form-control" id="exampleInputEmail1"
+                                    aria-describedby="emailHelp">
+                                <div id="emailHelp" class="form-text">Informe um email válido</div>
+                            </div>
+                            <div class="mb-3">
+                                <label for="exampleFormControlTextarea1" class="form-label">Mensagem</label>
+                                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-success">Enviar</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{%endblock%}
